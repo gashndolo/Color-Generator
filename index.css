@@ -1,12 +1,51 @@
 html, body {
     margin: 0;
     padding: 0;
+    background-color: #1F2937;
+    color: #D5D4D8;
+    font-family: 'Roboto', sans-serif;
 }
 
+.main {
+    width: 780px;
+    margin: 0 auto;
+}
 form {
     margin-top: 1em;
+    margin-bottom: 1em;
     padding-left: 0.5em;
     padding-right: 0.5em;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.color-picker,
+.type-picker,
+.get-color-button {
+    border: 0.1px solid #D1D5DB;
+    border-radius: 4px;
+    height: 2em;
+}
+
+.type-picker {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.get-color-button {
+    background-color: #FFFFFF;
+}
+
+.color-div {
+    height: 100%;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.colors {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 300px;
+    margin: 0 auto;
 }
