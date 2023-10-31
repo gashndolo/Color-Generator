@@ -2,7 +2,7 @@
 document.getElementById("color-form").addEventListener("submit", function(e) {
     e.preventDefault()
     const parent = document.getElementById("colors")
-    parent.innerHTML = ""
+    
     const color = document.getElementById("color-picker").value.substring(1)
     const type = document.getElementById("type").value
     
@@ -11,6 +11,7 @@ document.getElementById("color-form").addEventListener("submit", function(e) {
         .then(res => res.json())
         .then(data => {
             console.log(data.colors.length)
+            parent.innerHTML = ""
             
             for (let color of data.colors) {
                 console.log(color.hex.value)
