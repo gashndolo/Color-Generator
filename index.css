@@ -36,6 +36,10 @@ form {
     background-color: #FFFFFF;
 }
 
+.get-color-button:active {
+    background-color: #f0bdbd;
+}
+
 .color-div {
     height: 100%;
     flex-grow: 1;
